@@ -16,7 +16,7 @@ app.use(session({ secret: "put your text here" }));
 app.use(passport.initialize());
 app.use(passport.session());
 
-app.use(express.static(__dirname+'/public/assignment'));
+app.use(express.static(__dirname+'/public'));
 
 app.set('port', (process.env.PORT || 5000));
 
